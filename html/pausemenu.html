@@ -1,0 +1,106 @@
+<!---------------------------->
+<!---- BOII | DEVELOPMENT ---->
+<!---------------------------->
+
+<!doctype html>
+<html>
+    <head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BOII | PAUSE MENU</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- ICONS -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <!-- FONT -->
+        <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+        <!-- CSS -->
+        <link rel="stylesheet" href="pausemenu.css">
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="main-container" class="hidden">
+            <div class="menu-overlay"></div>
+            <div class="header-container">
+                <h1 id="sv-name">Nox OFF</h1>   
+                <div class="logo-container">
+                    <logo></logo>
+                </div>
+            </div>
+            <div id="news-container" class="hidden">
+                <h1 class="content-header">NEWS</h1>
+                <div class="news-grid">
+                    <div><img src="img/news1.jpg" alt="1" class="news-img"><p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    <br></br>
+                    <div><img src="img/news2.jpg" alt="2" class="news-img"><p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    <br></br>
+                    <div><img src="img/news3.jpg" alt="3" class="news-img"><p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    <br></br>
+                    <!-- ADD MORE NEWS POSTS HERE -->
+                </div>
+            </div>
+            <div id="rules-container" class="hidden">
+                <h1 class="content-header">Règlement</h1>
+                <br></br>
+                <p class="content-text">⁍ Vous devez avoir un bon microphone.</p>
+                <br></br>
+                <p class="content-text">⁍ Vous DEVEZ créer un caractère AUCUN CARACTÈRE PAR DÉFAUT ne sera autorisé. Vous recevrez un menu de vêtements à changer si vous le remarquez par un administrateur.</p>
+                <br></br>
+                <p class="content-text">⁍ Vous DEVEZ rester IC ou Dans le personnage à tout moment pendant les situations de RP actives, sauf indication contraire d un membre du personnel.</p>
+                <br></br>
+                <p class="content-text">⁍ Base a Vendre n’est PAS autorisé sur notre serveur. Restez propre, cette règle concerne tous les mots / expressions non adaptés aux enfants utilisés sur les plates-formes de chat de notre communauté, tels que la voix dans le jeu, le chat en jeu ou notre plate-forme Discord.</p>
+                <br></br>
+                <p class="content-text">⁍ Nous ne tolérons aucune discrimination fondée sur le sexe, la race, la religion, le mode de vie ou la sexualité ou les opinions politiques de quelque nature que ce soit.</p>
+                <br></br>
+                <p class="content-text">⁍ Les comportements toxiques, y compris l’intimidation, l’incitation et toute autre forme d’actions négatives, ne seront PAS tolérés.</p>
+                <br></br>
+                <p class="content-text">⁍ Non contenu non sûr pour le travail (NSFW). Cela inclut le texte, les images ou les liens mettant en vedette la nudité, le sexe, la violence dure ou tout autre contenu graphiquement dérangeant.</p>
+                <br></br>
+                <p class="content-text">⁍ Pas d auto-promotion (invitations au serveur, publicités, etc.) sans l’autorisation approuvée d’un membre du personnel. Cela inclut la messagerie directe aux autres membres de la communauté.</p>
+                <br></br>
+                <p class="content-text">⁍ Les joueurs doivent toujours soumettre un ticket en premier au lieu de demander directement un membre du personnel. Si cela est jugé nécessaire, votre billet sera transmis à la personne appropriée.</p>
+                <br></br>
+                <p class="content-text">⁍ Donnez à tout le monde la même courtoisie commune que vous vous attendez à recevoir. Cette règle est en place pour s’assurer que tout le monde a une expérience sûre et amusante sur notre serveur.</p>
+                <br></br>
+                <!-- ADD MORE RULES HERE -->
+            </div>
+            <div id="reports-container" class="hidden">
+                <h1 class="content-header">REPORT</h1>
+                <br></br>
+                <div class="form-container">
+                    <label for="fname">First name (your characters):</label><br><br>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name (your characters):</label><br><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="reporttype">Report Type:</label><br><br>
+                    <select name="type" id="reporttype">
+                        <option value="Suggestion">Suggestion</option>
+                        <option value="Bug">Bug Report</option>
+                        <option value="Player">Player Report</option>
+                        <option value="Staff">Staff Report</option>#
+                        <!-- ADD MORE REPORT TYPES HERE -->
+                    </select><br><br>
+                    <label for="subject">Subject:</label><br><br>
+                    <input type="text" id="subject" name="subject"><br><br>
+                    <label for="description">Description:</label><br><br>
+                    <textarea rows="4" cols="50" name="description" form="description" id="description"></textarea><br>
+                    <button type="submit" id="form-submit-btn">SUBMIT</button>
+                  </div>
+                  <div id="form-alert-container" class="hidden">PLEASE ENSURE THAT ALL FIELDS ARE FILLED BEFORE SUBMITTING A REPORT!
+                    <br>
+                    <button class="form-failed-btn">Fermée</button>
+                  </div>
+            </div>
+            <button class="content-btn1">Fermée</button>
+            <button class="content-btn2">NEWS</button>
+            <button class="content-btn3">Règlement</button>
+            <button class="content-btn4">REPORT</button>
+            <button class="content-btn5">Paramètre</button>
+            <button class="content-btn6">Deconnecter</button>  
+        </div>
+        <!-- SCRIPT -->
+        <script src="pausemenu.js" type="text/javascript"></script>
+    </body>
+</html>
